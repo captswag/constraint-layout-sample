@@ -21,4 +21,5 @@ Instead, I used LinearLayout to group two TextViews together and then used Const
 ## Learning resources
 
 [https://developer.android.com/training/constraint-layout/index.html](https://developer.android.com/training/constraint-layout/index.html)
+
 [https://www.youtube.com/watch?v=z53Ed0ddxgM](https://www.youtube.com/watch?v=z53Ed0ddxgM)
