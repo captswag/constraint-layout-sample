@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="captswag.com.constraintlayoutdemo.MainActivity">
+
+    <ImageView
+        android:id="@+id/image_banner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/msg_event_image_description"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="h,16:9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/placeholder" />
+
+    <TextView
+        android:id="@+id/text_event_title"
+        style="@style/Event.Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:maxLines="2"
+        android:text="@string/title_event_name"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline_right"
+        app:layout_constraintRight_toLeftOf="@+id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/image_banner" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_company_logo"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/google"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@+id/text_event_title" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_event_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_event_details">
+
+        <TextView
+            style="@style/Event.Details.Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="@string/title_event_location_value" />
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/Event.Details.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/title_event_location_label" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_event_details"
+        style="@style/Event.Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/title_event_details_label"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@+id/image_company_logo" />
+
+    <LinearLayout
+        android:id="@+id/layout_event_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@+id/layout_event_date"
+        app:layout_constraintTop_toBottomOf="@+id/text_event_details">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Event.Details.Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="@string/title_event_time_value" />
+
+        <TextView
+            style="@style/Event.Details.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/title_event_time_label" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_event_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@+id/layout_event_location"
+        app:layout_constraintTop_toBottomOf="@+id/text_event_details">
+
+        <TextView
+            style="@style/Event.Details.Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="@string/title_event_date_value" />
+
+        <TextView
+            style="@style/Event.Details.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/title_event_date_label" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_event_description_label"
+        style="@style/Event.Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/title_event_description_label"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@+id/layout_event_location" />
+
+    <TextView
+        android:id="@+id/text_event_description_value"
+        style="@style/Event.Description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:text="@string/title_event_description_value"
+        app:layout_constraintBottom_toTopOf="@+id/button_buy_tickets"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline_right"
+        app:layout_constraintRight_toLeftOf="@+id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/text_event_description_label"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_buy_tickets"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_buy_tickets_background"
+        android:minHeight="0dp"
+        android:text="@string/action_event_buy_ticket"
+        android:textColor="@color/buyTicketsButtonTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline_right"
+        app:layout_constraintRight_toLeftOf="@+id/guideline_left" />
+
+    <LinearLayout
+        android:id="@+id/layout_company_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/image_company_logo"
+        app:layout_constraintLeft_toRightOf="@+id/image_company_logo"
+        app:layout_constraintRight_toLeftOf="@+id/guideline_left"
+        app:layout_constraintTop_toTopOf="@+id/image_company_logo">
+
+        <TextView
+            style="@style/Event.Company.Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:text="@string/title_company_name" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/Event.Company.Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="@string/msg_company_description" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ConstraintLayoutDemo</string>
+
+    <!-- MainActivity -->
+    <string name="msg_event_image_description">Event image</string>
+    <string name="title_event_name">Interaction Design course in Pan Pacific Manila</string>
+    <string name="title_company_name">Design events group</string>
+    <string name="msg_company_description">6 events created</string>
+    <string name="title_event_details_label">Event details</string>
+    <string name="title_event_location_value">Manila</string>
+    <string name="title_event_location_label">Location</string>
+    <string name="title_event_date_value">Today</string>
+    <string name="title_event_date_label">Event date</string>
+    <string name="title_event_time_value">4pm-6pm</string>
+    <string name="title_event_time_label">Schedule</string>
+    <string name="title_event_description_label">Event description</string>
+    <string name="title_event_description_value">With this interaction design course based in Pan Pacific, Manila, we\'ll learn the basics of interaction design, starting from scratch before introducing much more complex concepts.</string>
+    <string name="action_event_buy_ticket">Get Tickets · 60,000€</string>
+
+</resources>

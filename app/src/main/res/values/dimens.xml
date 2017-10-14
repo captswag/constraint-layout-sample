@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- MainActivity -->
+    <dimen name="event_title_line_spacing">4dp</dimen>
+    <dimen name="event_title_text_size">20sp</dimen>
+    <dimen name="event_header_text_size">14sp</dimen>
+    <dimen name="event_company_name_text_size">16sp</dimen>
+    <dimen name="event_company_description_text_size">14sp</dimen>
+    <dimen name="event_details_value_text_size">18sp</dimen>
+    <dimen name="event_detail_label_text_size">14sp</dimen>
+    <dimen name="event_description_line_spacing">4dp</dimen>
+    <dimen name="event_description_value_text_size">14sp</dimen>
+</resources>

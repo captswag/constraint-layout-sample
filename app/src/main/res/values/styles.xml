@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="Event" />
+
+    <style name="Event.Title">
+        <item name="android:lineSpacingExtra">@dimen/event_title_line_spacing</item>
+        <item name="android:textColor">@color/eventTextColorPrimary</item>
+        <item name="android:textSize">@dimen/event_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Event.Header">
+        <item name="android:textColor">@color/eventTextColorSecondary</item>
+        <item name="android:textSize">@dimen/event_header_text_size</item>
+    </style>
+
+    <style name="Event.Company" />
+
+    <style name="Event.Company.Name">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/event_company_name_text_size</item>
+        <item name="android:textColor">@color/eventTextColorPrimary</item>
+    </style>
+
+    <style name="Event.Company.Description">
+        <item name="android:textSize">@dimen/event_company_description_text_size</item>
+        <item name="android:textColor">@color/eventTextColorSecondary</item>
+    </style>
+
+    <style name="Event.Details">
+        <item name="android:textColor">@color/eventTextColorPrimary</item>
+    </style>
+
+    <style name="Event.Details.Value" parent="Event.Details">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/event_details_value_text_size</item>
+    </style>
+
+    <style name="Event.Details.Label" parent="Event.Details">
+        <item name="android:textSize">@dimen/event_detail_label_text_size</item>
+    </style>
+
+    <style name="Event.Description">
+        <item name="android:textSize">@dimen/event_description_value_text_size</item>
+        <item name="android:lineSpacingExtra">@dimen/event_description_line_spacing</item>
+        <item name="android:textColor">@color/eventTextColorPrimary</item>
+    </style>
+
+</resources>
